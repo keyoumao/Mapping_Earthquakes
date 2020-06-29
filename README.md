@@ -12,7 +12,7 @@ The goals of this challenge are for you to:
 - Add a third map style to allow the user to select from three different maps.
 
 Please find the code in the repository:
-<https://github.com/keyoumao/Mapping_Earthquakes/tree/master/Earthquake_Challenge>
+<https://github.com/keyoumao/Mapping_Earthquakes/tree/master/Earthquake_Challenge> <br>
 The link of the website is attached as follows:
 <https://keyoumao.github.io/Mapping_Earthquakes/>
 
