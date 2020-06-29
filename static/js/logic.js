@@ -1,6 +1,6 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
-
+API_KEY = "pk.eyJ1Ijoia2V5b3VtYW8iLCJhIjoiY2tidmZ6NDM4MDVteTMxcWw1aGZyM2Y2bSJ9.UUaueuTANvHSVhN4lMlRgQ";
 // We create the dark view tile layer that will be an option for our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
