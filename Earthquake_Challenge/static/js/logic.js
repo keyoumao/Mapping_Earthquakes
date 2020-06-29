@@ -13,17 +13,26 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 	maxZoom: 18,
 	accessToken: API_KEY
 });
+let light = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+	attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+	maxZoom: 18,
+	accessToken: API_KEY
+});
 // Create the earthquake layer for our map.
 let earthquakes = new L.layerGroup();
+// Create the  tectonic plate layer for our map.
+let  tectonicplate = new L.layerGroup();
 // We define an object that contains the overlays.
 // This overlay will be visible all the time.
 let overlays = {
-	Earthquakes: earthquakes
+	"Tectonic Plates": tectonicplate,
+	"Earthquakes": earthquakes
 };
 // Create a base layer that holds both maps.
 let baseMaps = {
 	"Streets": streets,
-	"Satellite Streets": satelliteStreets
+	"Satellite": satelliteStreets,
+	"Light": light
 };
 // Create a legend control object.
 let legend = L.control({
@@ -129,4 +138,19 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 	// Then we add the earthquake layer to our map.
 	earthquakes.addTo(map);
 
+});
+
+// Create a style for the lines.
+let myStyle = {
+	color: "#ff8c00",
+	weight: 3
+}
+
+// Grabbing our GeoJSON tectonic plate data.
+d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function (data) {
+	console.log(data);
+	// Creating a tectonic plate layer with the retrieved data.
+	L.geoJson(data, {style: myStyle})
+	.addTo(tectonicplate);
+	tectonicplate.addTo(map);
 });
