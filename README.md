@@ -2,14 +2,9 @@
 
 Data of earthquakes in tectonic plates over the past 7 days.
 
-## Challenge
+## Introduction
 
-The goals of this challenge are for you to:
-
-- Use d3.json() to get tectonic plate data and add the data using the L.geoJSON() layer.
-- Style the tectonic plate LineString data to stand out on the map.
-- Add the tectonic plate data as an overlay with the earthquake data.
-- Add a third map style to allow the user to select from three different maps.
+The United States Geological Survey (USGS) (https://www.usgs.gov/) is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. They develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. I have built a set of tools that will allow visualization of USGS earthquake data. This app is intended for displaying the earthquake data: illustrate the relationship between the location and frequency of seismic activity and tectonic plates, which could attract potential funding agencies or industrial sponsors to support rearch on improving our planet. 
 
 Please find the code in the repository:
 <https://github.com/keyoumao/Mapping_Earthquakes/tree/master/Earthquake_Challenge> <br>
