@@ -11,5 +11,10 @@ Please find the code in the repository:
 The link of the website is attached as follows:
 <https://keyoumao.github.io/Mapping_Earthquakes/>
 
+## Basic Map
+The basic application is shown as below:
+![alt text](https://github.com/keyoumao/Mapping_Earthquakes/blob/master/Earthquakes_past7days/Capture.JPG)
+
+
 **A Screenshot of the webpage has been provided:**
 ![alt text](https://github.com/keyoumao/Mapping_Earthquakes/blob/master/Annotation%202020-06-28%20213311.png)
