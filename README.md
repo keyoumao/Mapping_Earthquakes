@@ -40,3 +40,6 @@ The basic application is shown as below:
 Here, we could select different layers of choice and display the tectonic activity and reveal its relationship with the live earthquakes. 
 
 ![alt text](https://github.com/keyoumao/Mapping_Earthquakes/blob/master/Annotation%202020-06-28%20213311.png)
+
+## Contact:
+https://keyoumao.github.io/
